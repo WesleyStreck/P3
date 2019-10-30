@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <Button
+        android:id="@+id/btnTelaEstadosSigla"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="26dp"
+        android:onClick="telaEstados"
+        android:text="Tela Estados Siglas"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/lblTeste" />
+
+    <Button
+        android:id="@+id/btnTelaMensagem"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="telaMensagem"
+        android:text="Tela Mensagem"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnTelaEstadosExtenso" />
+
+    <Button
+        android:id="@+id/btnFormulario"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="telaFormulario"
+        android:text="Tela Formulario"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnTelaMensagem" />
+    <Button
+        android:id="@+id/btnTelaEstadosExtenso"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Tela Estado Extensos"
+        android:onClick="telaEstadosExtenso"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnTelaEstadosSigla"/>
+
+    <Button
+        android:id="@+id/btnTelaBuscaCidade"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Tela Busca Cidade"
+        android:onClick="telaBuscaCidade"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnFormulario"/>
+
+    <TextView
+        android:id="@+id/lblTeste"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Página de Direcionamento"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.193" />
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
